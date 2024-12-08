@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html ,body{
+  scrollbar-width: none;
+  overflow-wrap: anywhere;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#main-content{
+  /* background-image: url('../public/images/'); */
+  background-color: blue;
+  height: 100vh;
+}
+.bg-blue-300 {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.toggle-btn{
+  display: none;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.toggle-btn button{
+ width: 100px;
+ background-color: darkgrey;
+ opacity: 100%;
+min-height: 20px; 
+margin-bottom: 10px;
 }
+.call-box-1{
+  width: 100%;
+}
+.heading{
+  font-size: 40px;
+  font-weight: bold;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+.transaction h2{
+  font-size: 32px;
+  font-weight: 500;
+}
+.transaction{
+  padding-bottom: 20px;
+}
+.transaction p{
+  font-weight: 400;
+  font-size: 18px;
+}
+.list-transactions,.heading{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.transaction-content{
+   background-color: white;
+   box-shadow: 4px 4px 4px 4px;
+   padding: 8px;
+   z-index: 1;
+}
+@media screen and (max-width:800px) {
+  .toggle-btn{
+    display: flex;
   }
-  to {
-    transform: rotate(360deg);
+  .app{
+    max-width: 1200px;
+  }
+  #sidebar{
+    display: none;
+    width: 0;
+    border-right: none;
+  }
+  #main-content{
+    max-width: 800px;
+    margin-left: 0;
+  }
+  .top-call-action{
+    overflow: hidden;
+    margin: 0 0 20px 10px;
+  }
+  .call-box-1 {
+     width: 600px;
+     padding-left: 10px;
+     padding-right: 10px;
+     min-width: 320px;
+  }
+  .user-account h2{
+    font-size: 35px;
+  }
+  .user-account p{
+    font-size: 22px;
+  }
+  .user-account img{
+    width: 80px;
+    height: 80px;
+  }
+
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slide {
+  animation-name: slide;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@media (max-width: 768px) {
+  .animate-slide {
+    animation-duration: 15s; /* Slower animation on small screens */
+  }
+
+  .w-44 {
+    width: 10rem; /* Adjust box width for better visibility */
   }
 }
