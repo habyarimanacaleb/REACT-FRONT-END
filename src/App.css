@@ -39,7 +39,7 @@ margin-bottom: 10px;
 
 }
 .transaction h2{
-  font-size: 32px;
+  font-size: 25px;
   font-weight: 500;
 }
 .transaction{
@@ -47,7 +47,7 @@ margin-bottom: 10px;
 }
 .transaction p{
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
 }
 .list-transactions,.heading{
   margin-top: 20px;
