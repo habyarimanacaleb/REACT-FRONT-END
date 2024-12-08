@@ -10,7 +10,7 @@ const Sections = () => {
        </div>
        <div class="list-transactions">
           <div class="transaction">
-            <h2>transaction1</h2>
+            <h2 style={{textTransform:'uppercase'}}>your town cinema</h2>
             <p>transaction description</p>
           </div>
           <div class="transactio-date">
@@ -19,7 +19,7 @@ const Sections = () => {
        </div>
        <div class="list-transactions">
           <div class="transaction">
-            <h2>transaction2</h2>
+            <h2 style={{textTransform:'uppercase'}}>you town utilities</h2>
             <p>transaction description</p>
           </div>
           <div class="transactio-date">
@@ -28,7 +28,7 @@ const Sections = () => {
        </div>
        <div class="list-transactions">
           <div class="transaction">
-            <h2>transaction3</h2>
+            <h2 style={{textTransform:'uppercase'}}>atm deposit</h2>
             <p>transaction description</p>
           </div>
           <div class="transactio-date">
@@ -37,7 +37,7 @@ const Sections = () => {
        </div>
        <div class="list-transactions">
           <div class="transaction">
-            <h2>transaction4</h2>
+            <h2 style={{textTransform:'uppercase'}}>le petite cafe</h2>
             <p>transaction description</p>
           </div>
           <div class="transactio-date">
@@ -46,7 +46,7 @@ const Sections = () => {
        </div>
        <div class="list-transactions">
           <div class="transaction">
-            <h2>transaction5</h2>
+            <h2 style={{textTransform:'uppercase'}}>el gran restraurante</h2>
             <p>transaction description</p>
           </div>
           <div class="transactio-date">
