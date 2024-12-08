@@ -1,6 +1,7 @@
 {
   "name": "static-app",
   "version": "0.1.0",
+  "homepage": "https://m-grafer.netlify.app",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.5",
